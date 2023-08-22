@@ -40,7 +40,7 @@ function showList(array) {
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  let arrayFiltrada = strangeArray.filter(elemento => typeof elemento === "string"); // LA OPCION MAS COMPACTA Y PRECISA
+  const arrayFiltrada = strangeArray.filter(elemento => typeof elemento === "string"); // LA OPCION MAS COMPACTA Y PRECISA
   arrayFiltrada.sort((a, b) => a.localeCompare(b));
   showList(arrayFiltrada);
 })
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 // document.addEventListener("DOMContentLoaded", (e) => {
-//   let arrayFiltrada = strangeArray.filter(elemento => typeof elemento === "string"); // filtro
+//   const arrayFiltrada = strangeArray.filter(elemento => typeof elemento === "string"); // filtro
 
 //   arrayFiltrada.sort(function (a, b) {            // Segundo metodo para ordenar
 
